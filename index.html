@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bundle Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="bundle-message">Buy 3 and Save 30%</div>
+    <!-- Product Grid -->
+    <section class="product-grid">
+      <article class="product-card" data-id="1">
+        <img src="assets/product-1.jpg" alt="Tie-Dye Lounge Set" />
+        <h3>Tie-Dye Lounge Set</h3>
+        <p>$150.00</p>
+        <button class="add-btn">Add to Bundle +</button>
+      </article>
+      <article class="product-card" data-id="2">
+        <img src="assets/product-2.jpg" alt="Sunburst Tracksuit" />
+        <h3>Sunburst Tracksuit</h3>
+        <p>$150.00</p>
+        <button class="add-btn">Add to Bundle +</button>
+      </article>
+      <article class="product-card" data-id="3">
+        <img src="assets/product-3.jpg" alt="Retro Red Streetwear" />
+        <h3>Retro Red Streetwear</h3>
+        <p>$150.00</p>
+        <button class="add-btn">Add to Bundle +</button>
+      </article>
+      <article class="product-card" data-id="4">
+        <img src="assets/product-4.jpg" alt="Urban Sportwear Combo" />
+        <h3>Urban Sportwear Combo</h3>
+        <p>$150.00</p>
+        <button class="add-btn">Add to Bundle +</button>
+      </article>
+      <article class="product-card" data-id="5">
+        <img src="assets/product-5.jpg" alt="Oversized Knit & Coat" />
+        <h3>Oversized Knit & Coat</h3>
+        <p>$150.00</p>
+        <button class="add-btn">Add to Bundle +</button>
+      </article>
+      <article class="product-card" data-id="6">
+        <img src="assets/product-6.jpg" alt="Chic Monochrome Blazer" />
+        <h3>Chic Monochrome Blazer</h3>
+        <p>$150.00</p>
+        <button class="add-btn">Add to Bundle +</button>
+      </article>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="bundle-sidebar">
+      <h2>Create a Bundle</h2>
+
+      <div class="progress-text">
+        Add at <b>least 3</b> Products and Save <b>30%</b>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
+      <ul id="bundle-items" class="bundle-items"></ul>
+
+      <div class="totals">
+        <p>Discount: <span id="discount">-$0.00</span></p>
+        <p>Subtotal: <span id="subtotal">$0.00</span></p>
+      </div>
+
+      <button id="cta-btn" disabled>Add Bundle to Cart</button>
+    </aside>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
