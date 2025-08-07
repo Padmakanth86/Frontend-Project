@@ -8,12 +8,12 @@ const ctaBtn = document.getElementById("cta-btn");
 let selected = [];
 
 const products = [
-  { id: 1, title: "Tie-Dye Lounge Set", img: "assets/product-1.jpg" },
-  { id: 2, title: "Sunburst Tracksuit", img: "assets/product-2.jpg" },
-  { id: 3, title: "Retro Red Streetwear", img: "assets/product-3.jpg" },
-  { id: 4, title: "Urban Sportwear Combo", img: "assets/product-4.jpg" },
-  { id: 5, title: "Oversized Knit & Coat", img: "assets/product-5.jpg" },
-  { id: 6, title: "Chic Monochrome Blazer", img: "assets/product-6.jpg" },
+  { id: 1, title: "Tie-Dye Lounge Set", img: "product-1.jpg" },
+  { id: 2, title: "Sunburst Tracksuit", img: "product-2.jpg" },
+  { id: 3, title: "Retro Red Streetwear", img: "product-3.jpg" },
+  { id: 4, title: "Urban Sportwear Combo", img: "product-4.jpg" },
+  { id: 5, title: "Oversized Knit & Coat", img: "product-5.jpg" },
+  { id: 6, title: "Chic Monochrome Blazer", img: "product-6.jpg" },
 ];
 
 addButtons.forEach((btn, index) => {
@@ -66,4 +66,5 @@ function updateSidebar() {
   subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
 
   ctaBtn.disabled = selected.length < 3;
+
 }
